@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<link rel="stylesheet" href="">
+	</head>
+	<body>
+      <!-- <a href="" onclick="creaMensaje()">boton</a> -->
+<!-- elemento /// tag
+id --- identificador del tag
+class --- denota un clase
+property .. propiedad de un tag
+name  nombre que le puedo poner al tag -->
+	
+     <!-- variables 
+	   <script>
+	       // var f = prompt("digite valor");
+	    	var a,b,c
+	    	a = 1;
+	    	b = 2.3
+	    	c = a+b
+	    	alert(c);
+	    	console.log(c);
+	    	console.log(a);
+	    	console.log(b);
+	    </script> -->
+	    <!-- ///////////////////////////// 
+	 //AMBITO DE LAS VIARIABLES -->
+	<!-- 	<script>
+			function creaMensaje() {
+			var mensaje = "Mensaje de prueba";
+			alert(mensaje); 
+			}
+			creaMensaje();
+			
+		</script> -->
+	
+<!-- ESTRUCTURAS DE CONDICION DE FLUJO	 -->
+
+		<!-- 	<script	>
+			var edad = prompt("digite su edad");
+			if(edad >= 18) {
+			alert("Eres mayor de edad");
+			}
+			else {
+			alert("Todavía eres menor de edad");
+			}
+			</script> -->
+
+<!-- estructura for
+			<script	>
+				var veces = 0;
+			for (var i = 0; i < 10; i++) {
+			console.log("hola");
+			veces++;
+			}
+			</script> -->
+
+<!-- ARREGLOS  
+<script	>
+		var dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+		for(var i=0; i<3; i++) {
+		console.log(dias[i]);
+		}
+		console.log(dias[2]);
+</script>	-->
+
+<!-- DOM -->
+<!-- ACCEDER AL DOM -->
+
+ <div id="division">
+  <p></p> 
+  <p></p> 
+  <p></p> 
+ </div>
+  
+<script>
+// document.getElementById("division").innerHTML = "Hello World!";
+document.getElementsByTagName("p")[0].innerHTML = "HOLA";
+</script>
+<!-- var parrafoEspecial = document.getElementsByName("especial");
+ 
+<p name="prueba">...</p>
+<p name="especial">...</p>
+<p>...</p>
+<!-- ////////////--------GET ELEMENT BY ID------///////// -->
+		<!-- <p id="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	.</p>
+		<button onclick="myFunction()">oprime botón</button>
+		<script>
+		function myFunction() {
+		document.getElementById("parrafo").innerHTML = "HOLA TODOS";
+		}
+		</script> -->
+<!-- modificar el css desde el DOM -->
+
+ 
+<!-- AGREGAR NODOS AL DOM 
+ 
+// Crear nodo de tipo Element
+// var parrafo = document.createElement("p");
+  
+// // Crear nodo de tipo Text
+// var contenido = document.createTextNode("Hola Mundo!");
+ 
+// // Añadir el nodo Text como hijo del nodo Element
+// parrafo.appendChild(contenido);
+ 
+// // Añadir el nodo Element como hijo de la pagina
+// document.body.appendChild(parrafo);	
+ 
+ var parrafo = document.getElementById("provisional");
+ parrafo.parentNode.removeChild(parrafo);
+---
+
+
+//OBTENER VALORES CON EL ELEMENTO VALUE
+<p>Click the button to return the value of the selected fruit.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("mySelect").selectedIndex;
+    alert(document.getElementsByTagName("option")[x].value);
+}
+</script>
+ -->
+ 
+<!--  <div id="prueba">HOLA</div>
+<script>
+	var a = document.getElementById("prueba").innerHTML = "QUE TAL"; 
+	//alert(a);
+</script> -->
+
+	</body> 
+</html>

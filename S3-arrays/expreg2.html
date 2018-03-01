@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="Validar()">CLIC AQUÍ</button>
+
+<p id="demo"></p>
+
+<script>
+function Validar() {
+    var cadena = "ESTO ES UNA CADENA DE TEXTOz";
+    var expresion = new RegExp("z$");
+    var respuesta = expresion.test(cadena);
+    document.getElementById("demo").innerHTML = respuesta;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ARRAYS</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	
+</body>
+<script>
+    function diasAleatorio(diaminimo,diamaximo){
+      var aleatorio = Math.random();
+      var diasSeleccionado = Math.floor(aleatorio*(diamaximo - diaminimo+1)+diaminimo);
+      console.log(aleatorio);
+    return diasSeleccionado;
+
+    }
+	// DECLARACIÓN DE ARRAYS
+    // var dias =["lunes", "martes", "miercoles","jueves","viernes","sabado","domingo"];
+    
+    // console.log("la maquina seleccionó un " + dias[diasAleatorio(2,6)]);
+    
+
+    // CICLOS SOBRE ARRAYS
+    // var dias =["lunes", "martes", "miercoles","jueves"];
+    // dias.forEach(function(item,index,array){
+    // console.log(item ,index);
+    // });
+    
+    // // // AGREGAR ELEMENTOS AL ARRAY
+    // var numeros = ["uno","dos","tres","cuatro"];
+    
+    // numeros.push("cinco");
+    // numeros.push("seis");
+    // document.write(numeros + "<br>");
+    // // document.write(numeros+ "<br>");
+    // numeros.unshift("cero");
+    // document.write(numeros+ "<br>");
+    // numeros.shift();
+    // document.write(numeros+ "<br>");
+    // numeros.pop();
+    // document.write(numeros+ "<br>");
+
+    //busqueda de un elemento en el array
+    var numeros = ["uno","dos","tres","cuatro"];
+    var resultado = numeros.indexOf("tres");
+    document.write(resultado);
+
+    //Eliminacion de elementos del array por indice
+    // var numeros = ["uno","dos","tres","cuatro","dos"];
+    // var pos = numeros.indexOf("uno");
+    // numeros.splice(pos,2); 
+    // document.write(numeros); 
+     
+     //COPIA DE UN ARRAY
+     // // var numeros = ["uno","dos","tres","cuatro","cinco"];
+     // var numeros_copia = numeros.slice();
+     // console.log(numeros);
+     // document.write(numeros_copia);
+     // numeros.push("siete")
+     // console.log(numeros);
+     
+
+    // EXPRESIONES REGULARES
+    //BUSQUEDA DE CARACTERES
+   //   var reg = / javascript /;
+ 	 // var msg = "hola javascript"
+ 	 // var res = msg.exec(reg);
+   //  // devuelve un array de 1 elemento ["javascript"], indicando que sí existe esa cadena dentro del texto
+   //  document.write(res);
+     
+  
+</script> 
+</html>
